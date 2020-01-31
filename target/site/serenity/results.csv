@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Basictest","Shouldstartup","FAILURE","2019-12-27T23:28:31.757+01:00[Europe/Berlin]","0.0","10.42"
+"Basictest","Login","ERROR","2019-12-28T01:30:29.135+01:00[Europe/Berlin]","0.0","0.05"
+"Login","Login","SUCCESS","2019-12-28T20:25:03.009+01:00[Europe/Berlin]","0.0","18.13"

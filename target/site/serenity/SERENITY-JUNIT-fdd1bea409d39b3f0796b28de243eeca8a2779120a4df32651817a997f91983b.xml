@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Perform different Employee Operations" skipped="0" tests="1" time="13.19" timestamp="2019-12-29 03:44:39"><testcase name="Validate employee can be successfully deleted"><failure type="java.lang.AssertionError"/><system-err>null&#13;
+pageobject.DeleteEmployee.deleteEmployeeIsSuccessful(DeleteEmployee.java:21)&#13;
+steps.SerenitySteps.deleteEmployeeIsSuccessful(SerenitySteps.java:59)&#13;
+features.EmployeeStepDefinitions.employee_is_successfully_deleted(EmployeeStepDefinitions.java:56)&#13;
+✽.Employee is successfully deleted(src/test/resources/features/employee.feature:9)&#13;
+</system-err></testcase></testsuite>

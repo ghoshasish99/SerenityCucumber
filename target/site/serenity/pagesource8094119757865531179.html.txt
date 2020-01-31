@@ -1,0 +1,58 @@
+<html lang="en" ng-app="cafeTownsend" class="ng-scope"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}</style>
+  <title>CafeTownsend-AngularJS-Rails</title>
+  <script defer="" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script defer="defer" src="/assets/application-80c5acac4ae74cf0fc0a3c0389e3c33f.js"></script>  <link href="/assets/application-a391b73221f73c2161edd8987363832a.css" media="screen" rel="stylesheet">
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="CBGGM66IvfbJ83pR++h9fqQ9zzjIDDCmLoFu09MqOlQ=" name="csrf-token">
+
+</head>
+
+<body style="">
+
+<div class="main-view ng-scope main-view-employees" ng-controller="MainController" ng-class="{login:'main-view-loggedIn',
+    employees:'main-view-employees',
+    edit:'main-view-edit',
+    create:'main-view-create'}[viewState.current]" style="">
+  <header ng-controller="HeaderController" class="ng-scope">
+    <div ng-class="{'hide-header':!authorized()}" class="header-container" style="">
+      <p class="main-button" ng-click="logout()">Logout</p>
+      <p id="greetings" class="ng-binding">Hello Luke</p>
+    </div>
+  </header>
+
+  <div class="main-view-wrapper main-view-wrapper-employees" ng-class="{login:'main-view-wrapper-loggedIn',
+      employees:'main-view-wrapper-employees',
+      edit:'main-view-wrapper-edit',
+      create:'main-view-wrapper-create'}[viewState.current]" style="">
+    <!-- ngView:  --><div ng-view="" class="main-view-container ng-scope"><ul id="sub-nav" class="ng-scope">
+  <li><a id="bAdd" class="subButton" ng-click="createEmployee()">Create</a></li>
+  <li><a id="bEdit" class="subButton disabled" ng-class="!selectedEmployee &amp;&amp; 'disabled'" ng-click="editEmployee()">Edit</a></li>
+  <li><a id="bDelete" class="subButton disabled" ng-class="!selectedEmployee &amp;&amp; 'disabled'" ng-click="deleteEmployee()">Delete</a></li>
+</ul>
+
+<div id="employee-list-container" class="ng-scope">
+  <ul id="employee-list">
+    <!-- ngRepeat: employee in employees --><li ng-repeat="employee in employees" ng-click="selectEmployee(employee)" ng-dblclick="editEmployee()" ng-class="employee.id == selectedEmployee.id &amp;&amp; 'active'" class="ng-scope ng-binding ng-animate ng-leave ng-leave-active" style=" transition-property: background-color;transition-duration: 0.4s;">
+      a_1 b
+    </li><!-- end ngRepeat: employee in employees -->
+  </ul>
+</div>
+
+</div>
+  </div>
+
+  <footer>
+    <p>
+      Built with <a href="http://angularjs.org/">AngularJS</a>,
+      <a href="http://coffeescript.org/">CoffeeScript</a>,
+      <a href="http://bourbon.io/">Bourbon</a> and <a href="http://rubyonrails.org/">Rails</a>.<br>
+    </p>
+
+    <p>
+      <a href="https://github.com/sectore/CafeTownsend-Angular-Rails">Get source code</a> by
+      <a href="http://www.websector.de">Jens Krause</a> @2012-2014
+    </p>
+  </footer>
+</div>
+
+</body></html>
